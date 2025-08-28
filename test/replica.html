@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worldly Explore</title>
+    <!-- Use a simple, clean font. We'll use the Inter font, which looks great on most devices. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN for all styling. This makes the file self-contained. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc; /* A light grey background */
+        }
+        /* Custom styles for gradients or other effects */
+        .header-bg {
+            background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header Section -->
+    <header class="header-bg text-white p-6 rounded-b-xl shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold tracking-tight">Worldly Explore</a>
+            <nav>
+                <ul class="flex space-x-6 text-lg font-medium">
+                    <li><a href="#about" class="hover:text-gray-200 transition-colors duration-300">About</a></li>
+                    <li><a href="#destinations" class="hover:text-gray-200 transition-colors duration-300">Destinations</a></li>
+                    <li><a href="#blog" class="hover:text-gray-200 transition-colors duration-300">Blog</a></li>
+                    <li><a href="#contact" class="hover:text-gray-200 transition-colors duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-24 text-center rounded-xl my-8 bg-white shadow-md mx-auto max-w-7xl">
+        <div class="container mx-auto px-4">
+            <h1 class="text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">Discover Your Next Adventure</h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+                Join us as we explore the hidden gems and breathtaking landscapes of our world. Your journey begins here.
+            </p>
+            <a href="#destinations" class="bg-purple-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-purple-700 transition-colors duration-300">
+                Start Exploring
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white rounded-xl shadow-md mx-auto max-w-7xl px-4 my-8">
+        <div class="container mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <!-- Placeholder image for the 'local' reference -->
+                <img src="https://placehold.co/800x600/764ba2/ffffff?text=About+Us" alt="About Worldly Explore" class="rounded-lg shadow-xl w-full h-auto">
+                <!-- IMPORTANT: To use your own local image, save an image file (e.g., 'about-us.jpg') in the same folder as this HTML file and replace the `src` attribute below.
+                <img src="about-us.jpg" alt="About Worldly Explore" class="rounded-lg shadow-xl w-full h-auto"> -->
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Story</h2>
+                <p class="text-lg text-gray-600 leading-relaxed mb-4">
+                    Worldly Explore was born from a passion for travel and a deep curiosity about different cultures. We believe that every journey, big or small, has the power to change your perspective and enrich your life. Our mission is to share authentic travel experiences and provide inspiration for your next adventure.
+                </p>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    From the bustling markets of Marrakech to the tranquil fjords of Norway, we document our travels with honest stories and stunning photography. Follow along as we uncover the beauty and complexity of our world.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="py-16 bg-white rounded-xl shadow-md mx-auto max-w-7xl px-4 my-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12">Featured Destinations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Destination Card 1 -->
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <!-- Placeholder image -->
+                    <img src="https://placehold.co/600x400/764ba2/ffffff?text=Japan" alt="Japan" class="w-full h-48 object-cover">
+                    <!-- IMPORTANT: To use your own local image, replace the `src` attribute with the path to your image file. For example: `src="japan.jpg"`. -->
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Mystical Japan</h3>
+                        <p class="text-gray-600 text-base">
+                            Explore ancient temples, bustling cities, and serene cherry blossom gardens. A journey of tradition and technology.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Destination Card 2 -->
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <!-- Placeholder image -->
+                    <img src="https://placehold.co/600x400/667eea/ffffff?text=Patagonia" alt="Patagonia" class="w-full h-48 object-cover">
+                    <!-- IMPORTANT: To use your own local image, replace the `src` attribute with the path to your image file. For example: `src="patagonia.jpg"`. -->
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">The Wilds of Patagonia</h3>
+                        <p class="text-gray-600 text-base">
+                            Hike through dramatic landscapes, witness towering glaciers, and experience the raw beauty of South America.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Destination Card 3 -->
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <!-- Placeholder image -->
+                    <img src="https://placehold.co/600x400/8b5cf6/ffffff?text=Morocco" alt="Morocco" class="w-full h-48 object-cover">
+                    <!-- IMPORTANT: To use your own local image, replace the `src` attribute with the path to your image file. For example: `src="morocco.jpg"`. -->
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Vibrant Morocco</h3>
+                        <p class="text-gray-600 text-base">
+                            Lose yourself in the maze-like medinas, sample exotic spices, and sleep under the stars in the Sahara Desert.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-16 bg-white rounded-xl shadow-md mx-auto max-w-7xl px-4 my-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12">Latest Blog Posts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">A Guide to Solo Travel</h3>
+                        <p class="text-gray-600 text-base mb-4">
+                            Tips and tricks for your first solo trip, from packing light to staying safe and making the most of your adventure.
+                        </p>
+                        <a href="#" class="text-purple-600 font-semibold hover:underline">Read More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Hidden Coves of the Amalfi Coast</h3>
+                        <p class="text-gray-600 text-base mb-4">
+                            Discover the secret spots and lesser-known beaches of Italy's stunning Amalfi Coast, away from the crowds.
+                        </p>
+                        <a href="#" class="text-purple-600 font-semibold hover:underline">Read More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Top 5 European City Breaks</h3>
+                        <p class="text-gray-600 text-base mb-4">
+                            A quick list of our favorite cities for a weekend getaway, complete with itinerary suggestions and local tips.
+                        </p>
+                        <a href="#" class="text-purple-600 font-semibold hover:underline">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-8 rounded-t-xl mt-8 shadow-lg">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2024 Worldly Explore. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
